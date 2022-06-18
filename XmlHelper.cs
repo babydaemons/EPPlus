@@ -828,7 +828,7 @@ namespace OfficeOpenXml
         {
             XmlReaderSettings settings = new XmlReaderSettings();
             //Disable entity parsing (to aviod xmlbombs, External Entity Attacks etc).
-#if(Core)
+#if(NET48)
             settings.DtdProcessing = DtdProcessing.Prohibit;
 #else
             settings.ProhibitDtd = true;            
